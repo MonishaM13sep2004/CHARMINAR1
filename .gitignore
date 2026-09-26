@@ -31,3 +31,7 @@ dist-ssr
 *.sln
 *.sw?
 
+# Gallery videos (too large for git — copy MOVs to public/gallery/ locally)
+src/gallery/
+public/gallery/
+
