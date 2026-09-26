@@ -1,0 +1,195 @@
+/* InfiniteMenu (react-bits) — restyled for the Charminar Biryani brand. */
+
+#infinite-grid-menu-canvas {
+  cursor: grab;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+  /* soften the hard cut where outer discs meet the canvas edge */
+  mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+}
+
+#infinite-grid-menu-canvas:active {
+  cursor: grabbing;
+}
+
+/* ── Frosted panel behind text so passing discs never hide it ─ */
+.face-title,
+.face-description {
+  z-index: 5;
+  background: color-mix(in oklab, var(--color-navy) 72%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid color-mix(in oklab, var(--color-cream) 12%, transparent);
+  border-radius: 1.25rem;
+  box-shadow: 0 24px 60px -24px rgb(0 0 0 / 0.6);
+  text-shadow: 0 1px 12px rgb(0 0 0 / 0.45);
+}
+
+/* ── Title (left on desktop, top on mobile) ─────────────────── */
+.face-title {
+  user-select: none;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  max-width: min(15ch, 28vw);
+  margin: 0;
+  padding: 1.5rem 1.75rem 1.75rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.75rem, 2.6vw, 2.75rem);
+  line-height: 1.05;
+  color: var(--color-cream);
+  pointer-events: none;
+}
+
+.face-step {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: var(--color-gold);
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 10px 30px -10px var(--color-gold);
+}
+
+.face-title.active {
+  opacity: 1;
+  transform: translateY(-50%);
+  transition: 0.5s ease;
+}
+
+.face-title.inactive {
+  opacity: 0;
+  transform: translate(-12px, -50%);
+  transition: 0.1s ease;
+}
+
+/* ── Description (right on desktop, bottom on mobile) ───────── */
+.face-description {
+  user-select: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  max-width: 30ch;
+  margin: 0;
+  padding: 1.5rem 1.75rem 1.5rem 1.5rem;
+  border-left: 3px solid var(--color-gold);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: color-mix(in oklab, var(--color-cream) 80%, transparent);
+  pointer-events: none;
+}
+
+.face-description.active {
+  opacity: 1;
+  transform: translateY(-50%);
+  transition: 0.5s ease;
+}
+
+.face-description.inactive {
+  opacity: 0;
+  transform: translate(12px, -50%);
+  transition: 0.1s ease;
+}
+
+/* ── Action button ──────────────────────────────────────────── */
+.action-button {
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  background: var(--color-gold);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 5px solid var(--infinite-menu-background, #000);
+}
+
+.action-button-icon {
+  user-select: none;
+  position: relative;
+  top: 2px;
+  margin: 0;
+  color: var(--color-navy);
+  font-size: 26px;
+}
+
+.action-button.active {
+  bottom: 3.8em;
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.5s ease;
+}
+
+.action-button.inactive {
+  bottom: -80px;
+  transform: translateX(-50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s ease;
+}
+
+/* ── Tablet & mobile: title on top, description at the bottom ─ */
+@media (max-width: 1023px) {
+  .face-title,
+  .face-description {
+    left: 50%;
+    right: auto;
+    top: auto;
+    width: calc(100% - 2.5rem);
+    max-width: 32rem;
+    text-align: center;
+  }
+
+  .face-title {
+    top: 1.5rem;
+    font-size: 1.6rem;
+    max-width: 20ch;
+  }
+
+  .face-step {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 0 auto 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .face-title.active {
+    transform: translateX(-50%);
+  }
+
+  .face-title.inactive {
+    transform: translate(-50%, -8px);
+  }
+
+  .face-title {
+    padding: 1rem 1.25rem 1.1rem;
+  }
+
+  .face-description {
+    bottom: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-left-width: 1px;
+    border-top: 3px solid var(--color-gold);
+    font-size: 0.9rem;
+  }
+
+  .face-description.active {
+    transform: translateX(-50%);
+  }
+
+  .face-description.inactive {
+    transform: translate(-50%, 8px);
+  }
+}

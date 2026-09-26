@@ -1,0 +1,20 @@
+/* Clip the characters while they rise in. The padding/negative margin pair
+   gives descenders (g, y, p) room so they aren't cut off at rest. */
+.scroll-float {
+  overflow: hidden;
+  padding-bottom: 0.15em;
+  margin-bottom: -0.15em;
+}
+
+.scroll-float-text {
+  display: inline;
+}
+
+.scroll-float-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.scroll-float .char {
+  display: inline-block;
+}
