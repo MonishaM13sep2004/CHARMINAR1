@@ -193,6 +193,21 @@ export const biryanis: BiryaniItem[] = [
 
 export const sections: MenuSection[] = [
   {
+    id: "soups",
+    title: "Soups",
+    items: [
+      n("Chicken Hot And Sour Soup", 279),
+      n("Chicken Manchow Soup", 279),
+      n("Chicken Long Pong Soup", 279, true),
+      n("Chicken Lemon Coriander Soup", 279, true),
+      v("Veg Hot And Sour Soup", 259),
+      v("Sweet Corn Soup", 259),
+      v("Veg Manchow Soup", 269),
+      v("Cream of Mushroom Soup", 269, true),
+      v("Veg Lemon Coriander Soup", 259, true),
+    ],
+  },
+  {
     id: "starters",
     title: "Starters",
     items: [
@@ -341,21 +356,6 @@ export const sections: MenuSection[] = [
       v("Amritsari Kulcha", 99, true),
       v("Puff Naan", 129, true),
       v("Folding Naan", 99),
-    ],
-  },
-  {
-    id: "soups",
-    title: "Soups",
-    items: [
-      n("Chicken Hot And Sour Soup", 279),
-      n("Chicken Manchow Soup", 279),
-      n("Chicken Long Pong Soup", 279, true),
-      n("Chicken Lemon Coriander Soup", 279, true),
-      v("Veg Hot And Sour Soup", 259),
-      v("Sweet Corn Soup", 259),
-      v("Veg Manchow Soup", 269),
-      v("Cream of Mushroom Soup", 269, true),
-      v("Veg Lemon Coriander Soup", 259, true),
     ],
   },
   {

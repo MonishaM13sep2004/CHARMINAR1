@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { CalendarCheck, Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
 import BorderGlow from "@/components/BorderGlow";
-import { outlets, site } from "@/data/site";
+import { outlets } from "@/data/site";
 
 // Open 11:30 AM – 11:30 PM IST daily. Computed after mount so SSR and client markup match.
 function OpenBadge() {
@@ -76,10 +76,10 @@ export function OutletCards() {
                 <Navigation className="h-3.5 w-3.5" /> Get directions
               </a>
               <a
-                href={site.phoneHref}
+                href={`tel:${o.phone.replace(/\s/g, "")}`}
                 className="inline-flex items-center gap-1.5 rounded-full border border-cream/20 px-4 py-2 text-xs font-semibold transition-colors hover:bg-cream/10"
               >
-                <Phone className="h-3.5 w-3.5" /> Call
+                <Phone className="h-3.5 w-3.5" /> {o.phone}
               </a>
               <Link
                 to="/contact"

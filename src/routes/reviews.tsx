@@ -1,7 +1,7 @@
 ﻿import { createFileRoute } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { ReviewsMarquee3D } from "@/components/site/ReviewsMarquee";
-import { orderLink } from "@/data/site";
 import ScrollFloat from "@/components/ScrollFloat";
 
 export const Route = createFileRoute("/reviews")({
@@ -29,7 +29,7 @@ function ReviewsPage() {
       <PageHero
         eyebrow="Straight from our guests"
         title="Reviews"
-        intro="We'd rather let the people who eat here every week do the talking."
+        intro="We are proud to let the people who dine with us every week speak for us."
       />
 
       <section className="overflow-hidden bg-secondary py-16">
@@ -43,18 +43,17 @@ function ReviewsPage() {
 
       <section className="bg-secondary">
         <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
-          <ScrollFloat className="text-3xl">Tasted it yourself?</ScrollFloat>
+          <ScrollFloat className="text-3xl">Had a meal with us?</ScrollFloat>
           <p className="mt-3 text-muted-foreground">
-            Leave us a review on Google - and if something wasn't right, tell us first so we
-            can fix it.
+            We would love to hear from you. Share your experience on Google and help others discover Charminar Biryani.
           </p>
           <a
-            href={orderLink}
+            href="https://www.google.com/search?q=charminar+biryani+reviews"
             target="_blank"
             rel="noreferrer"
-            className="mt-7 inline-flex rounded-full bg-navy px-8 py-3.5 text-sm font-semibold text-cream"
+            className="mt-7 inline-flex items-center gap-2 rounded-full bg-navy px-8 py-3.5 text-sm font-semibold text-cream"
           >
-            ORDER BIRYANI
+            Write a Google Review <ArrowRight className="h-4 w-4" />
           </a>
         </div>
       </section>

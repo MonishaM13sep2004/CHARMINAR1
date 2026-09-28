@@ -173,7 +173,7 @@ function Home() {
                 The Royal Taste of Hyderabad
               </h1>
               <p className="mt-5 text-base leading-relaxed text-white [text-shadow:0_1px_8px_rgba(0,0,0,0.8)]">
-                Zafrani Hyderabadi Dum Biryani - slow-cooked, saffron-steeped, served with love.
+                Zafrani Hyderabadi Dum Biryani, slow-cooked, saffron-steeped, served with love.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <ShinyButton
@@ -365,6 +365,16 @@ function Home() {
           <ScrollFloat className="mt-3 text-3xl sm:text-4xl">Loved by Hyderabad</ScrollFloat>
         </div>
         <ReviewsMarquee3D />
+        <div className="mt-10 flex justify-center">
+          <a
+            href="https://www.google.com/search?q=charminar+biryani+reviews"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-cream shadow-md transition-transform hover:scale-[1.03]"
+          >
+            See all Google reviews <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
       </section>
 
       {/* Offers — cards stack on top of each other as you scroll.

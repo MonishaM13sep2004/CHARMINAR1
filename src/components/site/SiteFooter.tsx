@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Facebook, Youtube, Phone, Mail, MapPin } from "lucide-react";
-import { site, outlets, orderLink } from "@/data/site";
+import { Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { site, outlets } from "@/data/site";
 
 export function SiteFooter() {
   return (
@@ -15,12 +15,6 @@ export function SiteFooter() {
           <div className="mt-5 flex gap-3">
             <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
               <Instagram className="h-5 w-5 text-cream/70 hover:text-gold" />
-            </a>
-            <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
-              <Facebook className="h-5 w-5 text-cream/70 hover:text-gold" />
-            </a>
-            <a href={site.youtube} target="_blank" rel="noreferrer" aria-label="YouTube">
-              <Youtube className="h-5 w-5 text-cream/70 hover:text-gold" />
             </a>
           </div>
         </div>
@@ -52,14 +46,24 @@ export function SiteFooter() {
 
         <div>
           <h3 className="eyebrow text-gold">Outlets</h3>
-          <ul className="mt-4 space-y-4 text-sm text-cream/75">
+          <ul className="mt-4 space-y-5 text-sm text-cream/75">
             {outlets.map((o) => (
-              <li key={o.slug} className="flex gap-2">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                <span>
-                  <span className="block font-medium text-cream">{o.area}</span>
-                  {o.address}
-                </span>
+              <li key={o.slug}>
+                <div className="flex gap-2">
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                  <span>
+                    <span className="block font-medium text-cream">
+                      {o.name.includes("Rooftop") ? "Rooftop Restaurant" : "Main Outlet"}
+                    </span>
+                    <span className="block">{o.address}</span>
+                    <a
+                      href={`tel:${o.phone.replace(/\s/g, "")}`}
+                      className="mt-1 inline-flex items-center gap-1.5 hover:text-gold"
+                    >
+                      <Phone className="h-3 w-3 text-gold" /> {o.phone}
+                    </a>
+                  </span>
+                </div>
               </li>
             ))}
           </ul>
@@ -69,32 +73,17 @@ export function SiteFooter() {
           <h3 className="eyebrow text-gold">Get in touch</h3>
           <ul className="mt-4 space-y-3 text-sm text-cream/75">
             <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-gold" />
-              <a href={site.phoneHref} className="hover:text-gold">
-                {site.phone}
-              </a>
-            </li>
-            <li className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-gold" />
               <a href={`mailto:${site.email}`} className="break-all hover:text-gold">
                 {site.email}
               </a>
             </li>
           </ul>
-          <a
-            href={orderLink}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-6 inline-flex rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-navy"
-          >
-            Order Biryani
-          </a>
         </div>
       </div>
 
       <div className="border-t border-cream/10 px-4 pb-24 pt-5 text-center text-xs text-cream/50 sm:pb-5">
-        © {new Date().getFullYear()} Charminar Biryani, Hyderabad. Traditional flavours. Modern
-        soul.
+        © {new Date().getFullYear()} Charminar Biryani, Hyderabad. Traditional flavours. Modern soul.
       </div>
     </footer>
   );

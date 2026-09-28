@@ -49,7 +49,7 @@ function FaqPage() {
         <div className="mt-12 rounded-2xl border border-border p-7 text-center shadow-card">
           <ScrollFloat className="text-2xl">Still have a question?</ScrollFloat>
           <p className="mt-3 text-sm text-muted-foreground">
-            Message us on WhatsApp or call {site.phone} - we reply quickly.
+            Message us on WhatsApp or call {site.phone} — we reply quickly.
           </p>
           <a
             href={waLink("Hi Charminar Biryani, I have a question.")}

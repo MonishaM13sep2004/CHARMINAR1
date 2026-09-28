@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 import { Marquee } from "@/components/ui/marquee";
 import { testimonials } from "@/data/site";
 
-const ReviewCard = ({ name, source, text }: { name: string; source: string; text: string }) => (
+const ReviewCard = ({ name, source, text, stars }: { name: string; source: string; text: string; stars: number }) => (
   <figure className="relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border border-navy/10 bg-white p-5 shadow-card">
     <div className="flex flex-row items-center gap-2">
       <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gold/25 text-xs font-bold text-navy">
@@ -14,7 +14,7 @@ const ReviewCard = ({ name, source, text }: { name: string; source: string; text
           {source}
           <span className="flex text-gold">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="h-2.5 w-2.5 fill-current" />
+              <Star key={i} className={`h-2.5 w-2.5 ${i < stars ? "fill-current" : "opacity-25"}`} />
             ))}
           </span>
         </p>

@@ -79,15 +79,19 @@ function MenuPage() {
             </button>
           ))}
           <div className="-mx-4 flex w-[calc(100%+2rem)] gap-2 overflow-x-auto px-4 [scrollbar-width:none] sm:mx-0 sm:ml-auto sm:w-auto sm:overflow-visible sm:px-0">
-            {sections.slice(0, 5).map((s) => (
-              <a
-                key={s.id}
-                href={`#${s.id}`}
-                className="shrink-0 whitespace-nowrap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:bg-secondary"
-              >
-                {s.title}
-              </a>
-            ))}
+            {["soups", "starters", "tandoor", "curries", "breads"].map((id) => {
+              const s = sections.find((sec) => sec.id === id);
+              if (!s) return null;
+              return (
+                <a
+                  key={s.id}
+                  href={`#${s.id}`}
+                  className="shrink-0 whitespace-nowrap rounded-full border border-border px-3 py-2 text-xs text-muted-foreground hover:bg-secondary"
+                >
+                  {s.title}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -183,7 +187,7 @@ function MenuPage() {
         <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
           <ScrollFloat className="text-3xl text-cream">Ready when you are</ScrollFloat>
           <p className="mt-3 text-cream/70">
-            Tell us the dishes and the headcount - we'll confirm your order right away.
+            Tell us the dishes and the headcount and we will confirm your order right away.
           </p>
           <a
             href={orderLink}
@@ -191,7 +195,7 @@ function MenuPage() {
             rel="noreferrer"
             className="mt-7 inline-flex rounded-full bg-gold px-8 py-4 text-sm font-semibold text-navy"
           >
-            ORDER BIRYANI
+            Order Now
           </a>
         </div>
       </section>
