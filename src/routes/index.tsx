@@ -159,10 +159,12 @@ function Home() {
           muted
           loop
           playsInline
-          className="absolute inset-0 h-full w-full object-contain object-center bg-black"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
+        {/* Dark overlay so text stays readable */}
+        <div className="pointer-events-none absolute inset-0 bg-black/45" />
         {/* Bottom gold line */}
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
 
