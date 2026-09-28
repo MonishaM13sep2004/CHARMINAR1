@@ -10,7 +10,7 @@ import CircularGallery from "@/components/CircularGallery";
 import { Marquee } from "@/components/ui/marquee";
 import { useIsMobile } from "@/hooks/use-mobile";
 import chickenBiryani from "@/assets/dishes photos-images/chicken biryani.jpg";
-import kajuPaneerBiryani from "@/assets/dishes photos-images/kaju paneer biryani.png";
+import vegDumBiryani from "@/assets/dishes photos-images/veg dum biryani.jpg";
 import gajrHalwa from "@/assets/dishes photos-images/gajar halwa.jpg";
 import prawnBiryani from "@/assets/dishes photos-images/prawn biryani.png";
 import shrimpCurry from "@/assets/dishes photos-images/shrimp curry.png";
@@ -62,10 +62,10 @@ const signatures = [
     price: "From ₹369",
   },
   {
-    img: kajuPaneerBiryani,
-    name: "Kaju Paneer Biryani",
+    img: vegDumBiryani,
+    name: "Zafrani Hyderabadi Veg Dum Biryani",
     desc: "Soft paneer and roasted cashew in Zafrani spice, cooked entirely separate from non-veg.",
-    price: "From ₹469",
+    price: "From ₹349",
   },
 ];
 
@@ -82,7 +82,7 @@ const galleryItems = [
   { image: muttonBiryaniPlaceholder, text: "Mutton Dum Biryani" },
   { image: "/ingredients.webp", text: "Handpicked Spices" },
   { image: prawnBiryani, text: "Prawn Biryani" },
-  { image: kajuPaneerBiryani, text: "Kaju Paneer Biryani" },
+  { image: vegDumBiryani, text: "Veg Dum Biryani" },
   { image: eggBiryani, text: "Egg Biryani" },
   { image: shrimpCurry, text: "Shrimp Curry" },
   { image: chickenBiryani2, text: "Family Pack" },
@@ -161,7 +161,7 @@ function Home() {
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
         >
-          <source src="/hero video.mp4" type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
         </video>
         {/* Bottom gold line */}
         <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />

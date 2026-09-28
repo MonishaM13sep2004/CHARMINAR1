@@ -1,7 +1,7 @@
 ﻿import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import chickenBiryaniImg from "@/assets/dishes photos-images/chicken biryani.jpg";
-import kajuPaneerImg from "@/assets/dishes photos-images/kaju paneer biryani.png";
+import vegDumBiryaniImg from "@/assets/dishes photos-images/veg dum biryani.jpg";
 import prawnBiryaniImg from "@/assets/dishes photos-images/prawn biryani.png";
 import shrimpCurryImg from "@/assets/dishes photos-images/shrimp curry.png";
 import InfiniteMenu from "@/components/InfiniteMenu";
@@ -37,7 +37,7 @@ const journey = [
     step: "03",
     title: "A Royal Tradition",
     body: "Using time-honoured Dum cooking, we blend these ingredients with the finest aged basmati to create our Signature Zafrani Biryani.",
-    img: kajuPaneerImg,
+    img: vegDumBiryaniImg,
   },
   {
     step: "04",
