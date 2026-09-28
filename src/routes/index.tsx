@@ -159,7 +159,7 @@ function Home() {
           muted
           loop
           playsInline
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-contain object-center bg-black"
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
