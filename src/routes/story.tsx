@@ -1,6 +1,7 @@
 ﻿import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import chickenBiryaniImg from "@/assets/dishes photos-images/chicken biryani.jpg";
+import soupImg from "@/assets/dishes photos-images/soup.jpg";
 import vegDumBiryaniImg from "@/assets/dishes photos-images/veg dum biryani.jpg";
 import prawnBiryaniImg from "@/assets/dishes photos-images/prawn biryani.png";
 import shrimpCurryImg from "@/assets/dishes photos-images/shrimp curry.png";
@@ -31,7 +32,7 @@ const journey = [
     step: "02",
     title: "They Find Their Home",
     body: "These extraordinary ingredients arrive in Hyderabad, the city that has perfected the art of biryani for centuries.",
-    img: chickenBiryaniImg,
+    img: soupImg,
   },
   {
     step: "03",
@@ -43,7 +44,7 @@ const journey = [
     step: "04",
     title: "Charminar Biryani",
     body: "A celebration of heritage, crafted for today - bringing the authentic taste of Hyderabad to your table, every single time.",
-    img: prawnBiryaniImg,
+    img: chickenBiryaniImg,
   },
 ];
 

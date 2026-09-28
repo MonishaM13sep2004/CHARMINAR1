@@ -83,7 +83,6 @@ const bestsellers = [
 const galleryItems = [
   { image: chickenBiryani, text: "Chicken Dum Biryani" },
   { image: muttonBiryaniPlaceholder, text: "Mutton Dum Biryani" },
-  { image: "/ingredients.webp", text: "Handpicked Spices" },
   { image: prawnBiryani, text: "Prawn Biryani" },
   { image: vegDumBiryani, text: "Veg Dum Biryani" },
   { image: eggBiryani, text: "Egg Biryani" },
