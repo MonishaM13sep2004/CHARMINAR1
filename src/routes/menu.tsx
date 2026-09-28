@@ -185,9 +185,9 @@ function MenuPage() {
 
       <section className="surface-royal">
         <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
-          <ScrollFloat className="text-3xl text-cream">Ready when you are</ScrollFloat>
+          <ScrollFloat className="text-3xl text-cream">Place Your Order</ScrollFloat>
           <p className="mt-3 text-cream/70">
-            Tell us the dishes and the headcount and we will confirm your order right away.
+            We would be delighted to serve you. Share your selection and guest count and our team will have your order confirmed promptly.
           </p>
           <a
             href={orderLink}

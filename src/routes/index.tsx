@@ -24,6 +24,9 @@ import { OffersStack } from "@/components/site/OffersStack";
 import { ReviewsMarquee3D } from "@/components/site/ReviewsMarquee";
 import ScrollFloat from "@/components/ScrollFloat";
 
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/search?sca_esv=0187de462875193d&hl=en-IN&q=Charminar+Biryani+Hyderabad&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_49Mt497I9VbSNFIg3cOj3KHV9IB1ZD7VWFPg8moja5aY0Kxsr7cKAxj9h2xwXNSq29yBKctdiDBkVfxwXa4pk7aCTf-I9meKfhc_VY4gp7Q9W5MDw%3D%3D&sa=X&ved=2ahUKEwiMtrzLwpCXAxV3TGwGHZ1kO84QrrQLegQIJRAA";
+
 const placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0e8d8'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='48' fill='%23c8a96e'%3E%3F%3C/text%3E%3C/svg%3E";
 
 export const Route = createFileRoute("/")({
@@ -369,7 +372,7 @@ function Home() {
         <ReviewsMarquee3D />
         <div className="mt-10 flex justify-center">
           <a
-            href="https://www.google.com/search?q=charminar+biryani+reviews"
+            href={GOOGLE_REVIEWS_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-cream shadow-md transition-transform hover:scale-[1.03]"
