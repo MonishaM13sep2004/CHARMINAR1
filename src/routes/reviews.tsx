@@ -42,16 +42,6 @@ function ReviewsPage() {
           <p className="mt-3 text-sm text-muted-foreground">Hover a column to pause and read.</p>
         </div>
         <ReviewsMarquee3D />
-        <div className="mt-10 flex justify-center">
-          <a
-            href={GOOGLE_REVIEWS_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-cream shadow-md transition-transform hover:scale-[1.03]"
-          >
-            See all Google reviews <ArrowRight className="h-4 w-4" />
-          </a>
-        </div>
       </section>
 
       <section className="bg-secondary">
