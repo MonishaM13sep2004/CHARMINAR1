@@ -173,7 +173,7 @@ function Home() {
                 The Royal Taste of Hyderabad
               </h1>
               <p className="mt-5 text-base leading-relaxed text-white [text-shadow:0_1px_8px_rgba(0,0,0,0.8)]">
-                Zafrani Hyderabadi Dum Biryani, slow-cooked, saffron-steeped, served with love.
+                Zafrani Hyderabadi Dum Biryani. Slow cooked. Saffron steeped. Served with love.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <ShinyButton
