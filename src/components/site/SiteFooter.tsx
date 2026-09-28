@@ -83,7 +83,7 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-cream/10 px-4 pb-24 pt-5 text-center text-xs text-cream/50 sm:pb-5">
-        © {new Date().getFullYear()} Charminar Biryani, Hyderabad. Traditional flavours. Modern soul.
+        © {new Date().getFullYear()} Charminar Biryani, Hyderabad. Authentic. Traditional. Royal.
         <span className="mx-2">·</span>
         <Link to="/admin" className="hover:text-cream/80 transition-colors">Admin</Link>
       </div>

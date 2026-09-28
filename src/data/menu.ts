@@ -44,7 +44,7 @@ export const biryanis: BiryaniItem[] = [
     name: "Zafrani Hyderabadi Veg Dum Biryani",
     diet: "veg",
     sizes: [
-      { label: "Serve 1", price: 349 },
+      { label: "Serves 1", price: 349 },
       { label: "Full", price: 569 },
       { label: "Family Pack", price: 1149 },
       { label: "Jumbo Pack", price: 1389 },
@@ -55,7 +55,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "veg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 469 },
+      { label: "Serves 1", price: 469 },
       { label: "Full", price: 749 },
       { label: "Family Pack", price: 1429 },
       { label: "Jumbo Pack", price: 1829 },
@@ -65,7 +65,7 @@ export const biryanis: BiryaniItem[] = [
     name: "Paneer Biryani",
     diet: "veg",
     sizes: [
-      { label: "Serve 1", price: 389 },
+      { label: "Serves 1", price: 389 },
       { label: "Full", price: 649 },
       { label: "Family Pack", price: 1289 },
       { label: "Jumbo Pack", price: 1469 },
@@ -76,7 +76,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "veg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 389 },
+      { label: "Serves 1", price: 389 },
       { label: "Full", price: 649 },
       { label: "Family Pack", price: 1289 },
       { label: "Jumbo Pack", price: 1469 },
@@ -88,7 +88,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "nonveg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 489 },
+      { label: "Serves 1", price: 489 },
       { label: "Full", price: 889 },
       { label: "Family Pack", price: 1689 },
       { label: "Jumbo Pack", price: 1949 },
@@ -100,7 +100,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "nonveg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 489 },
+      { label: "Serves 1", price: 489 },
       { label: "Full", price: 889 },
       { label: "Family Pack", price: 1689 },
       { label: "Jumbo Pack", price: 1949 },
@@ -112,7 +112,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "nonveg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 449 },
+      { label: "Serves 1", price: 449 },
       { label: "Full", price: 789 },
       { label: "Family Pack", price: 1489 },
       { label: "Jumbo Pack", price: 1949 },
@@ -123,7 +123,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "nonveg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 449 },
+      { label: "Serves 1", price: 449 },
       { label: "Full", price: 869 },
       { label: "Family Pack", price: 1489 },
       { label: "Jumbo Pack", price: 1949 },
@@ -134,7 +134,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "nonveg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 369 },
+      { label: "Serves 1", price: 369 },
       { label: "Full", price: 639 },
       { label: "Family Pack", price: 1289 },
       { label: "Jumbo Pack", price: 1649 },
@@ -145,7 +145,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "nonveg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 489 },
+      { label: "Serves 1", price: 489 },
       { label: "Full", price: 889 },
       { label: "Family Pack", price: 1689 },
       { label: "Jumbo Pack", price: 1949 },
@@ -155,7 +155,7 @@ export const biryanis: BiryaniItem[] = [
     name: "Egg Dum Biryani",
     diet: "nonveg",
     sizes: [
-      { label: "Serve 1", price: 339 },
+      { label: "Serves 1", price: 339 },
       { label: "Full", price: 569 },
       { label: "Family Pack", price: 1379 },
       { label: "Jumbo Pack", price: 1609 },
@@ -165,7 +165,7 @@ export const biryanis: BiryaniItem[] = [
     name: "Fish Biryani",
     diet: "nonveg",
     sizes: [
-      { label: "Serve 1", price: 409 },
+      { label: "Serves 1", price: 409 },
       { label: "Full", price: 639 },
       { label: "Family Pack", price: 1329 },
       { label: "Jumbo Pack", price: 1719 },
@@ -176,7 +176,7 @@ export const biryanis: BiryaniItem[] = [
     diet: "nonveg",
     popular: true,
     sizes: [
-      { label: "Serve 1", price: 509 },
+      { label: "Serves 1", price: 509 },
       { label: "Full", price: 1029 },
       { label: "Family Pack", price: 1829 },
       { label: "Jumbo Pack", price: 2129 },
@@ -186,7 +186,7 @@ export const biryanis: BiryaniItem[] = [
     name: "Chicken 65 Biryani",
     diet: "nonveg",
     sizes: [
-      { label: "Serve 1", price: 369 },
+      { label: "Serves 1", price: 369 },
       { label: "Full", price: 639 },
       { label: "Family Pack", price: 1289 },
       { label: "Jumbo Pack", price: 1649 },

@@ -53,7 +53,7 @@ function MenuPage() {
       <PageHero
         eyebrow="Traditional flavours. Timeless taste."
         title="The Charminar Biryani Menu"
-        intro="Every biryani is cooked on dum to order. Sizes run from Serve 1 to Jumbo Pack, so the table is always covered."
+        intro="Every biryani is slow-cooked on dum to order. Crafted fresh every day with no cold storage."
       />
 
       <div className="sticky top-[82px] z-30 sm:top-[86px] border-b border-border bg-background/95 backdrop-blur">
